@@ -11,8 +11,13 @@ class Person:
 #2)인스턴스(복사본)을 생성
 p1 = Person() 
 p2 = Person() 
-p1.name = "전우치"
-#3)메서드 호출
-p1.print()
-p2.print() 
+#실행시간에 변수 추가
+Person.title = "new title"
+print(p1.title)
+print(p2.title)
+print(Person.title)
+p1.age = 30
+print(p1.age)
+#print(p2.age)
+
 
