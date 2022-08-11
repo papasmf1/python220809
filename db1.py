@@ -1,6 +1,5 @@
 # db1.py
 import sqlite3
-
 #연결객체 생성
 con = sqlite3.connect(":memory:")
 #커서객체 생성
@@ -13,4 +12,4 @@ cur.execute("insert into PhoneBook values ('derick', '010-111');")
 cur.execute("select * from PhoneBook;")
 for row in cur:
     print(row)
-    
+
