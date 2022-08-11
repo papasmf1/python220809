@@ -11,6 +11,10 @@ print("운영체제이름:", name)
 
 #파일 목록 
 import glob 
-result = glob.glob("c:\\work\\*.py")
+result = glob.glob(r"c:\work\*.py")
 print(result)
+
+for item in result:
+    print(item)
+
 
